@@ -32,7 +32,7 @@ const [name, setName] = useState('DARK')
 useEffect (() => {
   const getUser = async () => {
     try {
-      const response = await axios.get(`http://api.github.com/users/${user}`)
+      const response = await axios.get(`https://api.github.com/users/${user}`)
       .then((res) => {
         setUserData(res.data)
       })
